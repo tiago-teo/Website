@@ -310,6 +310,8 @@ figure {
 img,
 svg {
   vertical-align: middle;
+  
+
 }
 
 table {
@@ -602,8 +604,23 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  #grid {
+      display: none;
+  }
+}
+
+.img-fluid2 {
+  max-width: 200px;
+  width: 200px; 
+  height: 200px;
+  object-fit: cover;
+  height: 200px;
+  padding:10px;
 }
 
 .img-thumbnail {
